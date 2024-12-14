@@ -1,0 +1,10 @@
+
+Attacking Ember model
+Traceback (most recent call last):
+  File "train_agent_chainer.py", line 1, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+=============================================
+Testing Ember model evasion
+find: '/app/ember-attack/evaded/score/': No such file or directory
+=============================================

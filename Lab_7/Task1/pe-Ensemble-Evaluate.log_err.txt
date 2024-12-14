@@ -1,0 +1,141 @@
+
+Extracting sequences
+Traceback (most recent call last):
+  File "extract-sequence.py", line 85, in <module>
+    _main()
+  File "extract-sequence.py", line 67, in _main
+    for e,r in enumerate(results):
+  File "/usr/lib/python2.7/multiprocessing/pool.py", line 673, in next
+    raise value
+IOError: [Errno 2] No such file or directory: '/tmp/cuckoo-headless-dump/rbot-original.exe/stuff.zip'
+=============================================
+Extracting features
+=============================================
+Evaluating LSTM model
+2024-11-27 21:36:48.644636: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-11-27 21:36:48.738528: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-11-27 21:36:48.741833: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2024-11-27 21:36:48.741859: I tensorflow/compiler/xla/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-11-27 21:36:49.205598: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2024-11-27 21:36:49.205705: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2024-11-27 21:36:49.205717: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2024-11-27 21:36:50.023668: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2024-11-27 21:36:50.023714: W tensorflow/compiler/xla/stream_executor/cuda/cuda_driver.cc:265] failed call to cuInit: UNKNOWN ERROR (303)
+2024-11-27 21:36:50.023742: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (b21a84eec497): /proc/driver/nvidia/version does not exist
+2024-11-27 21:36:50.023939: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-11-27 21:36:52.491769: W tensorflow/core/framework/op_kernel.cc:1830] OP_REQUIRES failed at transpose_op.cc:142 : INVALID_ARGUMENT: transpose expects a vector of size 2. But input(1) is a vector of size 3
+Traceback (most recent call last):
+  File "evaluation.py", line 225, in <module>
+    _main()
+  File "evaluation.py", line 139, in _main
+    p = lstm.predict_on_batch(xdata)
+  File "/usr/local/lib/python3.7/dist-packages/keras/engine/training.py", line 2571, in predict_on_batch
+    outputs = self.predict_function(iterator)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/util/traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/eager/execute.py", line 53, in quick_execute
+    inputs, attrs, num_outputs)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Graph execution error:
+
+transpose expects a vector of size 2. But input(1) is a vector of size 3
+	 [[{{node transpose}}]]
+	 [[sequential/lstm/PartitionedCall]] [Op:__inference_predict_function_2132]
+=============================================
+Evaluating RNN model
+2024-11-27 21:36:52.962531: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-11-27 21:36:53.055994: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-11-27 21:36:53.059704: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2024-11-27 21:36:53.059727: I tensorflow/compiler/xla/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-11-27 21:36:53.508829: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2024-11-27 21:36:53.508915: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2024-11-27 21:36:53.508926: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2024-11-27 21:36:54.296782: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2024-11-27 21:36:54.296824: W tensorflow/compiler/xla/stream_executor/cuda/cuda_driver.cc:265] failed call to cuInit: UNKNOWN ERROR (303)
+2024-11-27 21:36:54.296846: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (b21a84eec497): /proc/driver/nvidia/version does not exist
+2024-11-27 21:36:54.297046: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-11-27 21:36:55.512083: W tensorflow/core/framework/op_kernel.cc:1830] OP_REQUIRES failed at transpose_op.cc:142 : INVALID_ARGUMENT: transpose expects a vector of size 2. But input(1) is a vector of size 3
+Traceback (most recent call last):
+  File "evaluation.py", line 225, in <module>
+    _main()
+  File "evaluation.py", line 139, in _main
+    p = lstm.predict_on_batch(xdata)
+  File "/usr/local/lib/python3.7/dist-packages/keras/engine/training.py", line 2571, in predict_on_batch
+    outputs = self.predict_function(iterator)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/util/traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/eager/execute.py", line 53, in quick_execute
+    inputs, attrs, num_outputs)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Graph execution error:
+
+Detected at node 'sequential/simple_rnn/transpose' defined at (most recent call last):
+    File "evaluation.py", line 225, in <module>
+      _main()
+    File "evaluation.py", line 139, in _main
+      p = lstm.predict_on_batch(xdata)
+    File "/usr/local/lib/python3.7/dist-packages/keras/engine/training.py", line 2571, in predict_on_batch
+      outputs = self.predict_function(iterator)
+    File "/usr/local/lib/python3.7/dist-packages/keras/engine/training.py", line 2137, in predict_function
+      return step_function(self, iterator)
+    File "/usr/local/lib/python3.7/dist-packages/keras/engine/training.py", line 2123, in step_function
+      outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "/usr/local/lib/python3.7/dist-packages/keras/engine/training.py", line 2111, in run_step
+      outputs = model.predict_step(data)
+    File "/usr/local/lib/python3.7/dist-packages/keras/engine/training.py", line 2079, in predict_step
+      return self(x, training=False)
+    File "/usr/local/lib/python3.7/dist-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "/usr/local/lib/python3.7/dist-packages/keras/engine/training.py", line 561, in __call__
+      return super().__call__(*args, **kwargs)
+    File "/usr/local/lib/python3.7/dist-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "/usr/local/lib/python3.7/dist-packages/keras/engine/base_layer.py", line 1132, in __call__
+      outputs = call_fn(inputs, *args, **kwargs)
+    File "/usr/local/lib/python3.7/dist-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+      return fn(*args, **kwargs)
+    File "/usr/local/lib/python3.7/dist-packages/keras/engine/sequential.py", line 413, in call
+      return super().call(inputs, training=training, mask=mask)
+    File "/usr/local/lib/python3.7/dist-packages/keras/engine/functional.py", line 511, in call
+      return self._run_internal_graph(inputs, training=training, mask=mask)
+    File "/usr/local/lib/python3.7/dist-packages/keras/engine/functional.py", line 668, in _run_internal_graph
+      outputs = node.layer(*args, **kwargs)
+    File "/usr/local/lib/python3.7/dist-packages/keras/layers/rnn/base_rnn.py", line 556, in __call__
+      return super().__call__(inputs, **kwargs)
+    File "/usr/local/lib/python3.7/dist-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "/usr/local/lib/python3.7/dist-packages/keras/engine/base_layer.py", line 1132, in __call__
+      outputs = call_fn(inputs, *args, **kwargs)
+    File "/usr/local/lib/python3.7/dist-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+      return fn(*args, **kwargs)
+    File "/usr/local/lib/python3.7/dist-packages/keras/layers/rnn/simple_rnn.py", line 411, in call
+      inputs, mask=mask, training=training, initial_state=initial_state
+    File "/usr/local/lib/python3.7/dist-packages/keras/layers/rnn/base_rnn.py", line 733, in call
+      return_all_outputs=self.return_sequences,
+    File "/usr/local/lib/python3.7/dist-packages/keras/backend.py", line 4786, in rnn
+      inputs = tf.nest.map_structure(swap_batch_timestep, inputs)
+    File "/usr/local/lib/python3.7/dist-packages/keras/backend.py", line 4783, in swap_batch_timestep
+      return tf.compat.v1.transpose(input_t, axes)
+Node: 'sequential/simple_rnn/transpose'
+transpose expects a vector of size 2. But input(1) is a vector of size 3
+	 [[{{node sequential/simple_rnn/transpose}}]] [Op:__inference_predict_function_842]
+=============================================
+Evaluating CNN model
+2024-11-27 21:36:56.220698: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-11-27 21:36:56.316755: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-11-27 21:36:56.320482: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2024-11-27 21:36:56.320506: I tensorflow/compiler/xla/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-11-27 21:36:56.771354: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2024-11-27 21:36:56.771465: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2024-11-27 21:36:56.771480: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2024-11-27 21:36:57.580684: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2024-11-27 21:36:57.580725: W tensorflow/compiler/xla/stream_executor/cuda/cuda_driver.cc:265] failed call to cuInit: UNKNOWN ERROR (303)
+2024-11-27 21:36:57.580747: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (b21a84eec497): /proc/driver/nvidia/version does not exist
+2024-11-27 21:36:57.580917: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-11-27 21:36:58.345505: F ./tensorflow/core/util/tensor_format.h:427] Check failed: index >= 0 && index < num_total_dims Invalid index from the dimension: 3, 0, C
+2024-11-27 21:36:58.345610: F ./tensorflow/core/util/tensor_format.h:427] Check failed: index >= 0 && index < num_total_dims Invalid index from the dimension: 3, 0, C
+=============================================

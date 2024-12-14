@@ -1,0 +1,190 @@
+Started: 1732908130
+Running Mimicry-Attack
+Extracting sequences
+Start Timestamp: 1732908131
+Extracting data: 1/40Extracting data: 2/40Extracting data: 3/40Extracting data: 4/40Extracting data: 5/40Extracting data: 6/40Extracting data: 7/40Extracting data: 8/40Extracting data: 9/40Extracting data: 10/40Extracting data: 11/40Extracting data: 12/40Extracting data: 13/40Extracting data: 14/40Extracting data: 15/40Extracting data: 16/40Extracting data: 17/40Extracting data: 18/40Extracting data: 19/40Extracting data: 20/40Extracting data: 21/40Extracting data: 22/40Extracting data: 23/40Extracting data: 24/40Extracting data: 25/40Extracting data: 26/40Extracting data: 27/40Extracting data: 28/40Extracting data: 29/40Extracting data: 30/40Extracting data: 31/40Extracting data: 32/40Extracting data: 33/40Extracting data: 34/40Extracting data: 35/40Extracting data: 36/40Extracting data: 37/40Extracting data: 38/40Extracting data: 39/40Extracting data: 40/40
+Extracting data: 1/1
+
+/mnt/tmp/rbot-original.exe/rbot.exe: Error. Dump not in expected format
+End Timestamp: 1732908151
+=============================================
+Running Mimicry Attack
+Start Timestamp: 1732908161
+Running sequence mimicry attack
+Generating attack samples: 1/1
+Writing configs for attacks: 1/10Writing configs for attacks: 2/10Writing configs for attacks: 3/10Writing configs for attacks: 4/10Writing configs for attacks: 5/10Writing configs for attacks: 6/10Writing configs for attacks: 7/10Writing configs for attacks: 8/10Writing configs for attacks: 9/10Writing configs for attacks: 10/10
+================================
+End Timestamp: 1732908171
+=============================================
+Extracting sequence features
+Start Timestamp: 1732908171
+Reading in api.txt file...Done
+Reading in label.txt file...Done
+Reading in samples to preprocess...Done
+Window Size: 51
+Extracting sample's traces: 1/10Extracting sample's traces: 2/10Extracting sample's traces: 3/10Extracting sample's traces: 4/10Extracting sample's traces: 5/10Extracting sample's traces: 6/10Extracting sample's traces: 7/10Extracting sample's traces: 8/10Extracting sample's traces: 9/10Extracting sample's traces: 10/10
+
+Malicious: (not counting erroneous traces)
+Total number of PE samples extracted from: 10
+Number of malware families: 1
+Total number of subsequences extracted: 600
+Longest trace length: 3082
+Shortest trace length which is > 0: 3082
+Average trace length: 3082.00
+End Timestamp: 1732908172
+=============================================
+Evaluating model
+Start Timestamp: 1732908172
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ embedding (Embedding)       (None, 51, 256)           1289984   
+                                                                 
+ lstm (LSTM)                 (None, 128)               197120    
+                                                                 
+ dense (Dense)               (None, 128)               16512     
+                                                                 
+ activation (Activation)     (None, 128)               0         
+                                                                 
+ dropout (Dropout)           (None, 128)               0         
+                                                                 
+ logits (Dense)              (None, 6)                 774       
+                                                                 
+ activation_1 (Activation)   (None, 6)                 0         
+                                                                 
+=================================================================
+Total params: 1,504,390
+Trainable params: 1,504,390
+Non-trainable params: 0
+_________________________________________________________________
+WindowSize: 51
+Number of samples: 10
+Sample: rbot-original.exe_2 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(63, 20), (519, 20), (1, 12), (0, 5), (763, 3)]
+Sample: rbot-original.exe_7 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(519, 26), (63, 21), (1, 7), (0, 5), (763, 1)]
+Sample: rbot-original.exe_9 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(519, 27), (63, 18), (1, 8), (0, 7)]
+Sample: rbot-original.exe_5 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(519, 32), (63, 15), (1, 8), (0, 5)]
+Sample: rbot-original.exe_4 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(519, 29), (63, 14), (1, 10), (0, 7)]
+Sample: rbot-original.exe_1 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(519, 33), (63, 12), (0, 10), (1, 4), (763, 1)]
+Sample: rbot-original.exe_0 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(519, 32), (63, 14), (1, 8), (0, 6)]
+Sample: rbot-original.exe_6 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(519, 30), (63, 15), (1, 7), (0, 7), (763, 1)]
+Sample: rbot-original.exe_3 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(519, 34), (1, 11), (0, 9), (63, 6)]
+Sample: rbot-original.exe_8 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(519, 29), (63, 13), (0, 8), (1, 7), (763, 3)]
+Classes: [0, 1, 63, 519, 763]
+Stats for each class (class is index in these arrays)
+TPR: [-1.0, -1.0, -1.0, 0.48666668, -1.0]
+
+FPR: [0.115, 0.13666667, 0.24666667, -1.0, 0.015]
+
+FNR: [-1.0, -1.0, -1.0, 0.5133333, -1.0]
+
+TNR: [0.885, 0.86333334, 0.75333333, -1.0, 0.985]
+
+
+ACC: [0.885, 0.86333334, 0.75333333, 0.48666668, 0.985]
+
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ embedding (Embedding)       (None, 51, 256)           1289984   
+                                                                 
+ simple_rnn (SimpleRNN)      (None, 128)               49280     
+                                                                 
+ dense (Dense)               (None, 128)               16512     
+                                                                 
+ activation (Activation)     (None, 128)               0         
+                                                                 
+ dropout (Dropout)           (None, 128)               0         
+                                                                 
+ logits (Dense)              (None, 6)                 774       
+                                                                 
+ activation_1 (Activation)   (None, 6)                 0         
+                                                                 
+=================================================================
+Total params: 1,356,550
+Trainable params: 1,356,550
+Non-trainable params: 0
+_________________________________________________________________
+WindowSize: 51
+Number of samples: 10
+Sample: rbot-original.exe_2 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(1, 31), (0, 25), (63, 2), (519, 2)]
+Sample: rbot-original.exe_7 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(0, 32), (1, 21), (63, 6), (519, 1)]
+Sample: rbot-original.exe_9 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(1, 30), (0, 24), (63, 4), (519, 2)]
+Sample: rbot-original.exe_5 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(0, 33), (1, 18), (63, 7), (763, 1), (519, 1)]
+Sample: rbot-original.exe_4 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(1, 29), (0, 23), (63, 7), (763, 1)]
+Sample: rbot-original.exe_1 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(1, 31), (0, 20), (63, 4), (519, 3), (763, 2)]
+Sample: rbot-original.exe_0 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(1, 30), (0, 23), (63, 4), (519, 3)]
+Sample: rbot-original.exe_6 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(1, 29), (0, 27), (519, 2), (63, 2)]
+Sample: rbot-original.exe_3 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(1, 32), (0, 27), (63, 1)]
+Sample: rbot-original.exe_8 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(0, 29), (1, 28), (63, 2), (763, 1)]
+Classes: [0, 1, 63, 519, 763]
+Stats for each class (class is index in these arrays)
+TPR: [-1.0, -1.0, -1.0, 0.023333333, -1.0]
+
+FPR: [0.43833333, 0.465, 0.065, -1.0, 0.008333334]
+
+FNR: [-1.0, -1.0, -1.0, 0.9766667, -1.0]
+
+TNR: [0.56166667, 0.535, 0.935, -1.0, 0.9916667]
+
+
+ACC: [0.56166667, 0.535, 0.935, 0.023333333, 0.9916667]
+
+Model: "model"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ input_1 (InputLayer)           [(None, 51)]         0           []                               
+                                                                                                  
+ embedding (Embedding)          (None, 51, 256)      1289984     ['input_1[0][0]']                
+                                                                                                  
+ conv1d (Conv1D)                (None, 49, 64)       49216       ['embedding[0][0]']              
+                                                                                                  
+ conv1d_1 (Conv1D)              (None, 49, 64)       49216       ['embedding[0][0]']              
+                                                                                                  
+ multiply (Multiply)            (None, 49, 64)       0           ['conv1d[0][0]',                 
+                                                                  'conv1d_1[0][0]']               
+                                                                                                  
+ dropout (Dropout)              (None, 49, 64)       0           ['multiply[0][0]']               
+                                                                                                  
+ global_max_pooling1d (GlobalMa  (None, 64)          0           ['dropout[0][0]']                
+ xPooling1D)                                                                                      
+                                                                                                  
+ dense (Dense)                  (None, 128)          8320        ['global_max_pooling1d[0][0]']   
+                                                                                                  
+ dense_1 (Dense)                (None, 6)            774         ['dense[0][0]']                  
+                                                                                                  
+==================================================================================================
+Total params: 1,397,510
+Trainable params: 1,397,510
+Non-trainable params: 0
+__________________________________________________________________________________________________
+WindowSize: 51
+Number of samples: 10
+Sample: rbot-original.exe_2 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(1, 40), (0, 15), (63, 5)]
+Sample: rbot-original.exe_7 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(1, 40), (0, 17), (63, 3)]
+Sample: rbot-original.exe_9 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(1, 35), (0, 21), (63, 4)]
+Sample: rbot-original.exe_5 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(1, 37), (0, 16), (63, 7)]
+Sample: rbot-original.exe_4 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(1, 39), (0, 14), (63, 7)]
+Sample: rbot-original.exe_1 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(1, 37), (0, 14), (63, 9)]
+Sample: rbot-original.exe_0 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(1, 39), (0, 14), (63, 7)]
+Sample: rbot-original.exe_6 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(1, 35), (0, 17), (63, 8)]
+Sample: rbot-original.exe_3 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(1, 35), (0, 15), (63, 10)]
+Sample: rbot-original.exe_8 | Label: rbot (519) | Subsequences: 60 | Predicted classes: [(1, 37), (0, 17), (63, 6)]
+Classes: [0, 1, 63, 519]
+Stats for each class (class is index in these arrays)
+TPR: [-1.0, -1.0, -1.0, 0.0]
+
+FPR: [0.26666668, 0.62333333, 0.11, -1.0]
+
+FNR: [-1.0, -1.0, -1.0, 1.0]
+
+TNR: [0.73333335, 0.37666667, 0.89, -1.0]
+
+
+ACC: [0.73333335, 0.37666667, 0.89, 0.0]
+
+End Timestamp: 1732908179
+=============================================
+Finished: 1732908179

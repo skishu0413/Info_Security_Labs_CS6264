@@ -1,0 +1,37 @@
+
+Extracting existence features
+Traceback (most recent call last):
+  File "extract-existence.py", line 127, in <module>
+    _main()
+  File "extract-existence.py", line 91, in _main
+    for e,r in enumerate(results):
+  File "/usr/lib/python2.7/multiprocessing/pool.py", line 673, in next
+    raise value
+IOError: [Errno 2] No such file or directory: '/tmp/cuckoo-headless-dump/rbot-original.exe/stuff.zip'
+=============================================
+Training models
+=============================================
+Extracting frequency features
+Traceback (most recent call last):
+  File "extract-frequency.py", line 131, in <module>
+    _main()
+  File "extract-frequency.py", line 92, in _main
+    for e,r in enumerate(results):
+  File "/usr/lib/python2.7/multiprocessing/pool.py", line 673, in next
+    raise value
+IOError: [Errno 2] No such file or directory: '/tmp/cuckoo-headless-dump/rbot-original.exe/stuff.zip'
+=============================================
+Training models
+=============================================
+Extracting argument features
+Traceback (most recent call last):
+  File "extract.py", line 113, in <module>
+    _main()
+  File "extract.py", line 104, in _main
+    for e,r in enumerate(results):
+  File "/usr/lib/python2.7/multiprocessing/pool.py", line 673, in next
+    raise value
+IOError: [Errno 2] No such file or directory: '/tmp/cuckoo-headless-dump/rbot-original.exe/stuff.zip'
+=============================================
+Training models
+=============================================

@@ -1,0 +1,13 @@
+Started: 1733191611
+Running Ember-Attack
+Copied samples to folder:
+242
+Attacking Ember model
+Start Timestamp: 1733191617
+End Timestamp: 1733191617
+=============================================
+Testing Ember model evasion
+Start Timestamp: 1733191618
+End Timestamp: 1733191618
+=============================================
+Finished: 1733191618

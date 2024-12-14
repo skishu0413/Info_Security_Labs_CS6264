@@ -1,0 +1,188 @@
+Started: 1733192111
+Running Ensemble-Evaluate
+Extracting sequences
+Start Timestamp: 1733192111
+
+Extracting data: 1/10Extracting data: 2/10Extracting data: 3/10Extracting data: 4/10Extracting data: 5/10Extracting data: 6/10Extracting data: 7/10Extracting data: 8/10Extracting data: 9/10Extracting data: 10/10
+End Timestamp: 1733192122
+=============================================
+Extracting features
+Start Timestamp: 1733192122
+Reading in api.txt file...Done
+Reading in label.txt file...Done
+Reading in samples to preprocess...Done
+Window Size: 51
+Extracting sample's traces: 1/10Extracting sample's traces: 2/10Extracting sample's traces: 3/10Extracting sample's traces: 4/10Extracting sample's traces: 5/10Extracting sample's traces: 6/10Extracting sample's traces: 7/10Extracting sample's traces: 8/10Extracting sample's traces: 9/10Extracting sample's traces: 10/10
+
+Malicious: (not counting erroneous traces)
+Total number of PE samples extracted from: 10
+Number of malware families: 1
+Total number of subsequences extracted: 32706
+Longest trace length: 237419
+Shortest trace length which is > 0: 4535
+Average trace length: 166796.60
+End Timestamp: 1733192128
+=============================================
+Evaluating LSTM model
+Start Timestamp: 1733192128
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ embedding (Embedding)       (None, 51, 256)           1289984   
+                                                                 
+ lstm (LSTM)                 (None, 128)               197120    
+                                                                 
+ dense (Dense)               (None, 128)               16512     
+                                                                 
+ activation (Activation)     (None, 128)               0         
+                                                                 
+ dropout (Dropout)           (None, 128)               0         
+                                                                 
+ logits (Dense)              (None, 6)                 774       
+                                                                 
+ activation_1 (Activation)   (None, 6)                 0         
+                                                                 
+=================================================================
+Total params: 1,504,390
+Trainable params: 1,504,390
+Non-trainable params: 0
+_________________________________________________________________
+WindowSize: 51
+Number of samples: 10
+Sample: e284fe4dff0f0d7fe7f0246021fd5c11465dbfa573be1a7b473900d70ba9c7bf | Label: rbot (519) | Subsequences: 89 | Predicted classes: [(519, 57), (763, 24), (1, 6), (0, 2)]
+Sample: 321a1272e85c3c3108df3631808e2e689a82b95d882cc72db153ce912809825b | Label: rbot (519) | Subsequences: 89 | Predicted classes: [(519, 50), (763, 32), (1, 6), (0, 1)]
+Sample: 3fab00e79872b035597e2a20d7a1b7bd741902b8f5d69399e2b3f500acbed820 | Label: rbot (519) | Subsequences: 89 | Predicted classes: [(519, 49), (763, 32), (1, 7), (0, 1)]
+Sample: 13d267479f07962627f72d656f99388636ade904fd8ae1d8fb996a28a1c2e6b5 | Label: rbot (519) | Subsequences: 4626 | Predicted classes: [(519, 2811), (763, 1396), (1, 331), (0, 88)]
+Sample: 4918dda9633d4224fc344975ff95868f2926f905e96e056695588da5ed68ff65 | Label: rbot (519) | Subsequences: 4626 | Predicted classes: [(519, 2675), (763, 1306), (1, 560), (0, 79), (63, 6)]
+Sample: 24b3f926eaaf99c722196e568d88b24c2e23bf7b89d0245c7602f0a7290618b6 | Label: rbot (519) | Subsequences: 4645 | Predicted classes: [(519, 2562), (763, 1260), (1, 673), (0, 133), (63, 17)]
+Sample: cf73d4d9bf45754c79805a1bd2e64e69864baf25758077425b58a4ccef50a96c | Label: rbot (519) | Subsequences: 4616 | Predicted classes: [(519, 3103), (763, 1195), (1, 173), (0, 145)]
+Sample: aa96ffe300a4e0bcd8929267548916afd800199d50b0b2669b2adbe9f7a6c4f3 | Label: rbot (519) | Subsequences: 4645 | Predicted classes: [(519, 2609), (763, 1296), (1, 688), (0, 52)]
+Sample: cc30cf3f2557a0617593e5f05db04f65d8534839e9548cdf6d6a09d07d7d2af5 | Label: rbot (519) | Subsequences: 4655 | Predicted classes: [(519, 2802), (763, 1298), (1, 454), (0, 99), (63, 2)]
+Sample: fa2304baeb792c2071ad566bb1d6e2c18fa1147d43121ea41eb2c761a2526c84 | Label: rbot (519) | Subsequences: 4626 | Predicted classes: [(519, 2534), (763, 1028), (1, 678), (0, 385), (63, 1)]
+Classes: [0, 1, 63, 519, 763]
+Stats for each class (class is index in these arrays)
+TPR: [-1.0, -1.0, -1.0, 0.5886382, -1.0]
+
+FPR: [0.030116798, 0.10933774, 0.0007949612, -1.0, 0.27111232]
+
+FNR: [-1.0, -1.0, -1.0, 0.41136184, -1.0]
+
+TNR: [0.9698832, 0.89066225, 0.99920505, -1.0, 0.7288877]
+
+
+ACC: [0.9698832, 0.89066225, 0.99920505, 0.5886382, 0.7288877]
+
+End Timestamp: 1733192132
+=============================================
+Evaluating RNN model
+Start Timestamp: 1733192132
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ embedding (Embedding)       (None, 51, 256)           1289984   
+                                                                 
+ simple_rnn (SimpleRNN)      (None, 128)               49280     
+                                                                 
+ dense (Dense)               (None, 128)               16512     
+                                                                 
+ activation (Activation)     (None, 128)               0         
+                                                                 
+ dropout (Dropout)           (None, 128)               0         
+                                                                 
+ logits (Dense)              (None, 6)                 774       
+                                                                 
+ activation_1 (Activation)   (None, 6)                 0         
+                                                                 
+=================================================================
+Total params: 1,356,550
+Trainable params: 1,356,550
+Non-trainable params: 0
+_________________________________________________________________
+WindowSize: 51
+Number of samples: 10
+Sample: e284fe4dff0f0d7fe7f0246021fd5c11465dbfa573be1a7b473900d70ba9c7bf | Label: rbot (519) | Subsequences: 89 | Predicted classes: [(1, 52), (0, 31), (63, 3), (519, 2), (763, 1)]
+Sample: 321a1272e85c3c3108df3631808e2e689a82b95d882cc72db153ce912809825b | Label: rbot (519) | Subsequences: 89 | Predicted classes: [(1, 54), (0, 30), (519, 3), (763, 2)]
+Sample: 3fab00e79872b035597e2a20d7a1b7bd741902b8f5d69399e2b3f500acbed820 | Label: rbot (519) | Subsequences: 89 | Predicted classes: [(1, 58), (0, 25), (763, 3), (63, 2), (519, 1)]
+Sample: 13d267479f07962627f72d656f99388636ade904fd8ae1d8fb996a28a1c2e6b5 | Label: rbot (519) | Subsequences: 4626 | Predicted classes: [(1, 2740), (0, 1634), (519, 117), (763, 75), (63, 60)]
+Sample: 4918dda9633d4224fc344975ff95868f2926f905e96e056695588da5ed68ff65 | Label: rbot (519) | Subsequences: 4626 | Predicted classes: [(1, 2821), (0, 1384), (63, 174), (519, 136), (763, 111)]
+Sample: 24b3f926eaaf99c722196e568d88b24c2e23bf7b89d0245c7602f0a7290618b6 | Label: rbot (519) | Subsequences: 4645 | Predicted classes: [(1, 3072), (0, 1208), (763, 128), (519, 123), (63, 114)]
+Sample: cf73d4d9bf45754c79805a1bd2e64e69864baf25758077425b58a4ccef50a96c | Label: rbot (519) | Subsequences: 4616 | Predicted classes: [(1, 3196), (0, 1220), (519, 133), (763, 66), (63, 1)]
+Sample: aa96ffe300a4e0bcd8929267548916afd800199d50b0b2669b2adbe9f7a6c4f3 | Label: rbot (519) | Subsequences: 4645 | Predicted classes: [(1, 3196), (0, 1140), (63, 123), (519, 102), (763, 84)]
+Sample: cc30cf3f2557a0617593e5f05db04f65d8534839e9548cdf6d6a09d07d7d2af5 | Label: rbot (519) | Subsequences: 4655 | Predicted classes: [(1, 2905), (0, 1368), (519, 152), (63, 131), (763, 99)]
+Sample: fa2304baeb792c2071ad566bb1d6e2c18fa1147d43121ea41eb2c761a2526c84 | Label: rbot (519) | Subsequences: 4626 | Predicted classes: [(1, 3191), (0, 1159), (63, 108), (763, 98), (519, 70)]
+Classes: [0, 1, 63, 519, 763]
+Stats for each class (class is index in these arrays)
+TPR: [-1.0, -1.0, -1.0, 0.025652785, -1.0]
+
+FPR: [0.28126338, 0.650798, 0.021892007, -1.0, 0.020393811]
+
+FNR: [-1.0, -1.0, -1.0, 0.97434723, -1.0]
+
+TNR: [0.71873665, 0.34920198, 0.978108, -1.0, 0.9796062]
+
+
+ACC: [0.71873665, 0.34920198, 0.978108, 0.025652785, 0.9796062]
+
+End Timestamp: 1733192136
+=============================================
+Evaluating CNN model
+Start Timestamp: 1733192136
+Model: "model"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ input_1 (InputLayer)           [(None, 51)]         0           []                               
+                                                                                                  
+ embedding (Embedding)          (None, 51, 256)      1289984     ['input_1[0][0]']                
+                                                                                                  
+ conv1d (Conv1D)                (None, 49, 64)       49216       ['embedding[0][0]']              
+                                                                                                  
+ conv1d_1 (Conv1D)              (None, 49, 64)       49216       ['embedding[0][0]']              
+                                                                                                  
+ multiply (Multiply)            (None, 49, 64)       0           ['conv1d[0][0]',                 
+                                                                  'conv1d_1[0][0]']               
+                                                                                                  
+ dropout (Dropout)              (None, 49, 64)       0           ['multiply[0][0]']               
+                                                                                                  
+ global_max_pooling1d (GlobalMa  (None, 64)          0           ['dropout[0][0]']                
+ xPooling1D)                                                                                      
+                                                                                                  
+ dense (Dense)                  (None, 128)          8320        ['global_max_pooling1d[0][0]']   
+                                                                                                  
+ dense_1 (Dense)                (None, 6)            774         ['dense[0][0]']                  
+                                                                                                  
+==================================================================================================
+Total params: 1,397,510
+Trainable params: 1,397,510
+Non-trainable params: 0
+__________________________________________________________________________________________________
+WindowSize: 51
+Number of samples: 10
+Sample: e284fe4dff0f0d7fe7f0246021fd5c11465dbfa573be1a7b473900d70ba9c7bf | Label: rbot (519) | Subsequences: 89 | Predicted classes: [(1, 47), (63, 27), (0, 15)]
+Sample: 321a1272e85c3c3108df3631808e2e689a82b95d882cc72db153ce912809825b | Label: rbot (519) | Subsequences: 89 | Predicted classes: [(1, 43), (63, 28), (0, 18)]
+Sample: 3fab00e79872b035597e2a20d7a1b7bd741902b8f5d69399e2b3f500acbed820 | Label: rbot (519) | Subsequences: 89 | Predicted classes: [(1, 46), (0, 25), (63, 18)]
+Sample: 13d267479f07962627f72d656f99388636ade904fd8ae1d8fb996a28a1c2e6b5 | Label: rbot (519) | Subsequences: 4626 | Predicted classes: [(1, 2110), (0, 1515), (63, 1001)]
+Sample: 4918dda9633d4224fc344975ff95868f2926f905e96e056695588da5ed68ff65 | Label: rbot (519) | Subsequences: 4626 | Predicted classes: [(1, 2232), (0, 1762), (63, 622), (763, 10)]
+Sample: 24b3f926eaaf99c722196e568d88b24c2e23bf7b89d0245c7602f0a7290618b6 | Label: rbot (519) | Subsequences: 4645 | Predicted classes: [(1, 2556), (0, 1146), (63, 943)]
+Sample: cf73d4d9bf45754c79805a1bd2e64e69864baf25758077425b58a4ccef50a96c | Label: rbot (519) | Subsequences: 4616 | Predicted classes: [(1, 3204), (63, 942), (0, 470)]
+Sample: aa96ffe300a4e0bcd8929267548916afd800199d50b0b2669b2adbe9f7a6c4f3 | Label: rbot (519) | Subsequences: 4645 | Predicted classes: [(1, 2715), (0, 1362), (63, 568)]
+Sample: cc30cf3f2557a0617593e5f05db04f65d8534839e9548cdf6d6a09d07d7d2af5 | Label: rbot (519) | Subsequences: 4655 | Predicted classes: [(1, 2763), (63, 1309), (0, 583)]
+Sample: fa2304baeb792c2071ad566bb1d6e2c18fa1147d43121ea41eb2c761a2526c84 | Label: rbot (519) | Subsequences: 4626 | Predicted classes: [(1, 3076), (0, 936), (63, 614)]
+Classes: [0, 1, 63, 519, 763]
+Stats for each class (class is index in these arrays)
+TPR: [-1.0, -1.0, -1.0, 0.0, -1.0]
+
+FPR: [0.23946677, 0.57457346, 0.18565401, -1.0, 0.0003057543]
+
+FNR: [-1.0, -1.0, -1.0, 1.0, -1.0]
+
+TNR: [0.7605332, 0.4254265, 0.814346, -1.0, 0.9996942]
+
+
+ACC: [0.7605332, 0.4254265, 0.814346, 0.0, 0.9996942]
+
+End Timestamp: 1733192139
+=============================================
+Finished: 1733192139

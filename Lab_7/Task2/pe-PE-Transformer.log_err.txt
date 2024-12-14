@@ -1,0 +1,318 @@
+
+WARNING | 2024-11-29 19:23:13,613 | angr.analyses.cfg.cfg_fast | "collect_data_references" is deprecated and will be removed soon. Please use "data_references" instead
+ERROR   | 2024-11-29 19:23:20,645 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:20,645 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:20,645 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:20,645 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:20,645 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:23:20,645 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:23:20,645 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:23:20,645 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:23:20,645 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:20,645 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:20,645 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:23:20,645 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:20,645 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:20,645 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:23:20,645 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:20,645 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:20,645 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+WARNING | 2024-11-29 19:23:22,559 | angr.analyses.cfg.cfg_fast | No CFGNode is found for function 0x42c163 in _make_return_edges().
+WARNING | 2024-11-29 19:23:22,585 | angr.analyses.cfg.cfg_fast | No CFGNode is found for function 0x439184 in _make_return_edges().
+WARNING | 2024-11-29 19:23:22,601 | angr.analyses.cfg.cfg_fast | _tidy_data_references() sees an address 0x447cf0 that does not belong to any section or segment.
+WARNING | 2024-11-29 19:23:22,673 | angr.analyses.cfg.cfg_fast | _tidy_data_references() sees an address 0x447cf0 that does not belong to any section or segment.
+Error. 0x75391592: Target address does not exist
+Error. 0x75392776: Target address does not exist
+Error. 0x75392c38: Target address does not exist
+Error. ./shellcode/shellcode_isthreadpooltimerset: File does not exist
+Error. ./shellcode/shellcode_getmodulehandlew: File does not exist
+Error. 0x7539a310: Target address does not exist
+Error. 0x754ca5da: Target address does not exist
+Error. ./shellcode/shellcode_setfilepointer: File does not exist
+Warning. Overwriting address called from somewhere else: 0x416652
+WARNING | 2024-11-29 19:23:32,092 | angr.analyses.cfg.cfg_fast | "collect_data_references" is deprecated and will be removed soon. Please use "data_references" instead
+ERROR   | 2024-11-29 19:23:39,220 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:39,220 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:39,220 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:39,220 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:39,220 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:23:39,220 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:23:39,220 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:23:39,220 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:23:39,220 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:39,220 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:39,220 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:23:39,221 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:39,221 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:39,221 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:23:39,221 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:39,221 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:39,221 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+WARNING | 2024-11-29 19:23:41,156 | angr.analyses.cfg.cfg_fast | No CFGNode is found for function 0x42c163 in _make_return_edges().
+WARNING | 2024-11-29 19:23:41,182 | angr.analyses.cfg.cfg_fast | No CFGNode is found for function 0x439184 in _make_return_edges().
+WARNING | 2024-11-29 19:23:41,199 | angr.analyses.cfg.cfg_fast | _tidy_data_references() sees an address 0x447cf0 that does not belong to any section or segment.
+WARNING | 2024-11-29 19:23:41,271 | angr.analyses.cfg.cfg_fast | _tidy_data_references() sees an address 0x447cf0 that does not belong to any section or segment.
+Error. 0x7539a310: Target address does not exist
+Error. 0x75392c38: Target address does not exist
+Error. 0x754ca5da: Target address does not exist
+Error. 0x75391592: Target address does not exist
+Error. 0x75392776: Target address does not exist
+Error. ./shellcode/shellcode_isthreadpooltimerset: File does not exist
+Error. ./shellcode/shellcode_getmodulehandlew: File does not exist
+Error. ./shellcode/shellcode_setfilepointer: File does not exist
+Error. ./shellcode/shellcode_createdirectorya: File does not exist
+Warning. Overwriting address called from somewhere else: 0x416652
+WARNING | 2024-11-29 19:23:50,541 | angr.analyses.cfg.cfg_fast | "collect_data_references" is deprecated and will be removed soon. Please use "data_references" instead
+ERROR   | 2024-11-29 19:23:57,592 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:57,592 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:57,592 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:57,592 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:57,592 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:23:57,592 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:23:57,592 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:23:57,592 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:23:57,592 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:57,592 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:57,592 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:23:57,592 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:57,592 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:57,592 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:23:57,592 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:57,593 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:23:57,593 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+WARNING | 2024-11-29 19:23:59,504 | angr.analyses.cfg.cfg_fast | No CFGNode is found for function 0x42c163 in _make_return_edges().
+WARNING | 2024-11-29 19:23:59,529 | angr.analyses.cfg.cfg_fast | No CFGNode is found for function 0x439184 in _make_return_edges().
+WARNING | 2024-11-29 19:23:59,544 | angr.analyses.cfg.cfg_fast | _tidy_data_references() sees an address 0x447cf0 that does not belong to any section or segment.
+WARNING | 2024-11-29 19:23:59,615 | angr.analyses.cfg.cfg_fast | _tidy_data_references() sees an address 0x447cf0 that does not belong to any section or segment.
+Error. 0x75391592: Target address does not exist
+Error. 0x754ca5da: Target address does not exist
+Error. 0x75392776: Target address does not exist
+Error. 0x75392c38: Target address does not exist
+Error. ./shellcode/shellcode_isthreadpooltimerset: File does not exist
+Error. 0x7539a310: Target address does not exist
+Error. ./shellcode/shellcode_getmodulehandlew: File does not exist
+Error. ./shellcode/shellcode_setfilepointer: File does not exist
+Error. ./shellcode/shellcode_createdirectorya: File does not exist
+Warning. Overwriting address called from somewhere else: 0x416652
+WARNING | 2024-11-29 19:24:08,960 | angr.analyses.cfg.cfg_fast | "collect_data_references" is deprecated and will be removed soon. Please use "data_references" instead
+ERROR   | 2024-11-29 19:24:16,010 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:16,010 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:16,010 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:16,010 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:16,010 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:24:16,010 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:24:16,010 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:24:16,010 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:24:16,010 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:16,010 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:16,010 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:24:16,010 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:16,010 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:16,010 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:24:16,011 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:16,011 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:16,011 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+WARNING | 2024-11-29 19:24:17,971 | angr.analyses.cfg.cfg_fast | No CFGNode is found for function 0x42c163 in _make_return_edges().
+WARNING | 2024-11-29 19:24:17,999 | angr.analyses.cfg.cfg_fast | No CFGNode is found for function 0x439184 in _make_return_edges().
+WARNING | 2024-11-29 19:24:18,015 | angr.analyses.cfg.cfg_fast | _tidy_data_references() sees an address 0x447cf0 that does not belong to any section or segment.
+WARNING | 2024-11-29 19:24:18,089 | angr.analyses.cfg.cfg_fast | _tidy_data_references() sees an address 0x447cf0 that does not belong to any section or segment.
+Error. 0x7539a310: Target address does not exist
+Error. 0x754ca5da: Target address does not exist
+Error. 0x75391592: Target address does not exist
+Error. 0x75392776: Target address does not exist
+Error. 0x75392c38: Target address does not exist
+Error. ./shellcode/shellcode_isthreadpooltimerset: File does not exist
+Error. ./shellcode/shellcode_getmodulehandlew: File does not exist
+Error. ./shellcode/shellcode_setfilepointer: File does not exist
+Warning. Overwriting address called from somewhere else: 0x416652
+WARNING | 2024-11-29 19:24:27,749 | angr.analyses.cfg.cfg_fast | "collect_data_references" is deprecated and will be removed soon. Please use "data_references" instead
+ERROR   | 2024-11-29 19:24:35,068 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:35,068 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:35,068 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:35,068 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:35,068 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:24:35,068 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:24:35,068 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:24:35,068 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:24:35,069 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:35,069 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:35,069 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:24:35,069 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:35,069 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:35,069 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:24:35,069 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:35,069 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:35,069 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+WARNING | 2024-11-29 19:24:37,056 | angr.analyses.cfg.cfg_fast | No CFGNode is found for function 0x42c163 in _make_return_edges().
+WARNING | 2024-11-29 19:24:37,082 | angr.analyses.cfg.cfg_fast | No CFGNode is found for function 0x439184 in _make_return_edges().
+WARNING | 2024-11-29 19:24:37,098 | angr.analyses.cfg.cfg_fast | _tidy_data_references() sees an address 0x447cf0 that does not belong to any section or segment.
+WARNING | 2024-11-29 19:24:37,170 | angr.analyses.cfg.cfg_fast | _tidy_data_references() sees an address 0x447cf0 that does not belong to any section or segment.
+Error. 0x754ca5da: Target address does not exist
+Error. 0x75391592: Target address does not exist
+Error. 0x75392776: Target address does not exist
+Error. 0x75392c38: Target address does not exist
+Error. ./shellcode/shellcode_isthreadpooltimerset: File does not exist
+Error. ./shellcode/shellcode_getmodulehandlew: File does not exist
+Error. 0x7539a310: Target address does not exist
+Error. ./shellcode/shellcode_setfilepointer: File does not exist
+Warning. Overwriting address called from somewhere else: 0x416652
+WARNING | 2024-11-29 19:24:46,669 | angr.analyses.cfg.cfg_fast | "collect_data_references" is deprecated and will be removed soon. Please use "data_references" instead
+ERROR   | 2024-11-29 19:24:53,750 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:53,750 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:53,750 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:53,750 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:53,750 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:24:53,750 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:24:53,750 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:24:53,750 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:24:53,750 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:53,750 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:53,750 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:24:53,750 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:53,750 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:53,750 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:24:53,750 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:53,750 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:24:53,750 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+WARNING | 2024-11-29 19:24:55,704 | angr.analyses.cfg.cfg_fast | No CFGNode is found for function 0x42c163 in _make_return_edges().
+WARNING | 2024-11-29 19:24:55,730 | angr.analyses.cfg.cfg_fast | No CFGNode is found for function 0x439184 in _make_return_edges().
+WARNING | 2024-11-29 19:24:55,747 | angr.analyses.cfg.cfg_fast | _tidy_data_references() sees an address 0x447cf0 that does not belong to any section or segment.
+WARNING | 2024-11-29 19:24:55,820 | angr.analyses.cfg.cfg_fast | _tidy_data_references() sees an address 0x447cf0 that does not belong to any section or segment.
+Error. 0x75391592: Target address does not exist
+Error. 0x75392776: Target address does not exist
+Error. 0x75392c38: Target address does not exist
+Error. ./shellcode/shellcode_isthreadpooltimerset: File does not exist
+Error. 0x754ca5da: Target address does not exist
+Error. ./shellcode/shellcode_getmodulehandlew: File does not exist
+Error. 0x7539a310: Target address does not exist
+Error. ./shellcode/shellcode_createdirectorya: File does not exist
+Error. ./shellcode/shellcode_setfilepointer: File does not exist
+Warning. Overwriting address called from somewhere else: 0x416652
+WARNING | 2024-11-29 19:25:05,500 | angr.analyses.cfg.cfg_fast | "collect_data_references" is deprecated and will be removed soon. Please use "data_references" instead
+ERROR   | 2024-11-29 19:25:12,630 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:12,631 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:12,631 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:12,631 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:12,631 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:25:12,631 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:25:12,631 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:25:12,631 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:25:12,631 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:12,631 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:12,631 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:25:12,631 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:12,631 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:12,631 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:25:12,631 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:12,631 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:12,631 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+WARNING | 2024-11-29 19:25:14,577 | angr.analyses.cfg.cfg_fast | No CFGNode is found for function 0x42c163 in _make_return_edges().
+WARNING | 2024-11-29 19:25:14,603 | angr.analyses.cfg.cfg_fast | No CFGNode is found for function 0x439184 in _make_return_edges().
+WARNING | 2024-11-29 19:25:14,619 | angr.analyses.cfg.cfg_fast | _tidy_data_references() sees an address 0x447cf0 that does not belong to any section or segment.
+WARNING | 2024-11-29 19:25:14,692 | angr.analyses.cfg.cfg_fast | _tidy_data_references() sees an address 0x447cf0 that does not belong to any section or segment.
+Error. 0x75391592: Target address does not exist
+Error. 0x75392776: Target address does not exist
+Error. 0x7539a310: Target address does not exist
+Error. 0x75392c38: Target address does not exist
+Error. ./shellcode/shellcode_isthreadpooltimerset: File does not exist
+Error. 0x754ca5da: Target address does not exist
+Error. ./shellcode/shellcode_getmodulehandlew: File does not exist
+Error. ./shellcode/shellcode_createdirectorya: File does not exist
+Error. ./shellcode/shellcode_setfilepointer: File does not exist
+Warning. Overwriting address called from somewhere else: 0x416652
+WARNING | 2024-11-29 19:25:24,243 | angr.analyses.cfg.cfg_fast | "collect_data_references" is deprecated and will be removed soon. Please use "data_references" instead
+ERROR   | 2024-11-29 19:25:31,444 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:31,444 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:31,444 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:31,444 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:31,444 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:25:31,444 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:25:31,444 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:25:31,444 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:25:31,445 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:31,445 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:31,445 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:25:31,445 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:31,445 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:31,445 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:25:31,445 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:31,445 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:31,445 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+WARNING | 2024-11-29 19:25:33,405 | angr.analyses.cfg.cfg_fast | No CFGNode is found for function 0x42c163 in _make_return_edges().
+WARNING | 2024-11-29 19:25:33,431 | angr.analyses.cfg.cfg_fast | No CFGNode is found for function 0x439184 in _make_return_edges().
+WARNING | 2024-11-29 19:25:33,447 | angr.analyses.cfg.cfg_fast | _tidy_data_references() sees an address 0x447cf0 that does not belong to any section or segment.
+WARNING | 2024-11-29 19:25:33,519 | angr.analyses.cfg.cfg_fast | _tidy_data_references() sees an address 0x447cf0 that does not belong to any section or segment.
+Error. 0x75391592: Target address does not exist
+Error. 0x75392776: Target address does not exist
+Error. 0x75392c38: Target address does not exist
+Error. ./shellcode/shellcode_isthreadpooltimerset: File does not exist
+Error. 0x7539a310: Target address does not exist
+Error. 0x754ca5da: Target address does not exist
+Error. ./shellcode/shellcode_getmodulehandlew: File does not exist
+Error. ./shellcode/shellcode_createdirectorya: File does not exist
+Error. ./shellcode/shellcode_setfilepointer: File does not exist
+Warning. Overwriting address called from somewhere else: 0x416652
+WARNING | 2024-11-29 19:25:43,185 | angr.analyses.cfg.cfg_fast | "collect_data_references" is deprecated and will be removed soon. Please use "data_references" instead
+ERROR   | 2024-11-29 19:25:50,320 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:50,320 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:50,320 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:50,320 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:50,320 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:25:50,320 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:25:50,320 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:25:50,320 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:25:50,320 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:50,320 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:50,320 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:25:50,320 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:50,320 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:50,320 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:25:50,321 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:50,321 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:25:50,321 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+WARNING | 2024-11-29 19:25:52,261 | angr.analyses.cfg.cfg_fast | No CFGNode is found for function 0x42c163 in _make_return_edges().
+WARNING | 2024-11-29 19:25:52,286 | angr.analyses.cfg.cfg_fast | No CFGNode is found for function 0x439184 in _make_return_edges().
+WARNING | 2024-11-29 19:25:52,302 | angr.analyses.cfg.cfg_fast | _tidy_data_references() sees an address 0x447cf0 that does not belong to any section or segment.
+WARNING | 2024-11-29 19:25:52,372 | angr.analyses.cfg.cfg_fast | _tidy_data_references() sees an address 0x447cf0 that does not belong to any section or segment.
+Error. 0x754ca5da: Target address does not exist
+Error. 0x75392c38: Target address does not exist
+Error. 0x75391592: Target address does not exist
+Error. 0x7539a310: Target address does not exist
+Error. 0x75392776: Target address does not exist
+Error. ./shellcode/shellcode_isthreadpooltimerset: File does not exist
+Error. ./shellcode/shellcode_getmodulehandlew: File does not exist
+Error. ./shellcode/shellcode_createdirectorya: File does not exist
+Error. ./shellcode/shellcode_setfilepointer: File does not exist
+Warning. Overwriting address called from somewhere else: 0x416652
+WARNING | 2024-11-29 19:26:01,954 | angr.analyses.cfg.cfg_fast | "collect_data_references" is deprecated and will be removed soon. Please use "data_references" instead
+ERROR   | 2024-11-29 19:26:09,065 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:26:09,066 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:26:09,066 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:26:09,066 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:26:09,066 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:26:09,066 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:26:09,066 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:26:09,066 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:26:09,066 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:26:09,066 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:26:09,066 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:26:09,066 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:26:09,066 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:26:09,066 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+ERROR   | 2024-11-29 19:26:09,066 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:26:09,066 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported expression type GetI.
+ERROR   | 2024-11-29 19:26:09,066 | angr.analyses.propagator.engine_vex.SimEnginePropagatorVEX | Unsupported statement type PutI.
+WARNING | 2024-11-29 19:26:10,999 | angr.analyses.cfg.cfg_fast | No CFGNode is found for function 0x42c163 in _make_return_edges().
+WARNING | 2024-11-29 19:26:11,026 | angr.analyses.cfg.cfg_fast | No CFGNode is found for function 0x439184 in _make_return_edges().
+WARNING | 2024-11-29 19:26:11,042 | angr.analyses.cfg.cfg_fast | _tidy_data_references() sees an address 0x447cf0 that does not belong to any section or segment.
+WARNING | 2024-11-29 19:26:11,113 | angr.analyses.cfg.cfg_fast | _tidy_data_references() sees an address 0x447cf0 that does not belong to any section or segment.
+Error. 0x75392c38: Target address does not exist
+Error. 0x75392776: Target address does not exist
+Error. 0x75391592: Target address does not exist
+Error. ./shellcode/shellcode_isthreadpooltimerset: File does not exist
+Error. 0x7539a310: Target address does not exist
+Error. ./shellcode/shellcode_getmodulehandlew: File does not exist
+Error. 0x754ca5da: Target address does not exist
+Error. ./shellcode/shellcode_createdirectorya: File does not exist
+Error. ./shellcode/shellcode_setfilepointer: File does not exist
+Warning. Overwriting address called from somewhere else: 0x416652
