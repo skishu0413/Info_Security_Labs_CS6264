@@ -1,4 +1,3 @@
-sandy1.py
 import os
 import time
 import subprocess
