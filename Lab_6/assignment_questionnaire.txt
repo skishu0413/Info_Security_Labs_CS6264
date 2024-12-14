@@ -1,0 +1,93 @@
+Assignment Questionnaire
+========================
+
+NOTE: DO NOT DELETE --> and <--, and place your answers within the marks.
+  Example:
+    -->
+      130.207.7.210, scouter.cc.gatech.edu
+    <--
+
+
+Info
+====
+
+Example:
+  Your GT Login ID: kpark21
+  Your Name: Kyuhong Park
+
+-->
+  Your GT Login ID: skhadka9
+  Your Name: Suraj Khadka
+<--
+
+Task 1
+=======
+
+Q1.1 What is the seceret hash stored in /tmp/secret_1.txt?
+
+Example:
+  Hash : b06c8b2c83b223834d18795da692f699fb153195f7e3c800f1721fcbe87c6cf533b7d3456f990c058786f48edffca9588cb41f0a8403917b6d85f99431728f78
+-->
+  Hash : 771ac53fb8fbbd525b7d9209bc3d8a9c6be82b153f27eecfb4dfa08dbd33cb6ba9ac049dfe37ed7fc19cdf656ed8890ba4dfd54dad681a64dff06e3a55b09e02
+<--
+
+
+Q1.2.1 What is the name of the client asset directory?
+
+Example:
+  Directory name : clients_assets
+
+-->
+  Directory name : cs6264clients
+<--
+
+Q1.2.2 What is the best template file to compromise?
+
+Example:
+  Template file : js.html
+
+-->
+  Template file : scripts.html
+<--
+
+Q1.2.3 What is the hash on the Google Phishing page?
+
+Example:
+  Hash : b06c8b2c83b223834d18795da692f699fb153195f7e3c800f1721fcbe87c6cf533b7d3456f990c058786f48edffca9588cb41f0a8403917b6d85f99431728f78
+
+-->
+  Hash : 005d64bcd75582dc28b8f5cbe80aa5b8d359f9f8df89445e70bd1b29f59c70700223c27fd8aefb02643573ba712f49c910228fb9f836dd096a6d50e8b2727855
+<--
+
+
+Task 2
+=======
+
+Q2.2.1 What is the query (in one line) to locate potential Google Phishing attack?
+
+Example:
+  Query : match (n) where n.type="Script" return n
+
+-->
+  Query : match(f:Frame)-[req:request]->(res:Resource) where res.url contains "mail" return f, req, res
+<--
+
+
+Q2.2.2 What is the query (in one line) to locate potential Fake Notification attack?
+
+Example:
+  Query : match (n) where n.type="Script" return n
+
+-->
+  Query : match (f:Frame)-[d:download]->(file:File) return f, d, file
+<--
+
+Q2.2.3 What is the query (in one line) to locate potential Redirect Browser attack?
+
+Example:
+  Query : match (n) where n.type="Script" return n
+
+-->
+  Query : match(s:Script)-[c:create]->(f:Frame) where f.`security_origin` = left(f.url, size(f.url) - 1) return s, c, f
+<--
+

