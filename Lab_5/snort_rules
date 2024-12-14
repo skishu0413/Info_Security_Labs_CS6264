@@ -1,0 +1,15 @@
+var MALWARE_NET [192.168.0.0/16]
+
+# CNC
+alert tcp $MALWARE_NET any <> any any \
+    (msg:"cnc"; content: "cnc_sig"; \
+    sid:10000006; rev:001;)
+
+
+# Part 1
+alert tcp $MALWARE_NET any <> any any \
+    (msg:"Executable file detected"; \
+    file_data; content: "|7F 45 4C 46|";\
+    offset:0;  depth:300;\
+    metadata:service ftp;\
+    sid:10000007; rev:001;)

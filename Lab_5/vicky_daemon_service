@@ -1,0 +1,11 @@
+[Unit]
+Description=Daemon to send Snort logs from vicky to sandy over FTP
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/vagrant/daemon.py
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

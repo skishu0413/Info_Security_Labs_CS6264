@@ -1,0 +1,11 @@
+[Unit]
+Description=Sandbox Daemon for Executable Processing
+
+[Service]
+ExecStart=/usr/bin/python3 /home/lab3/sandy_daemon.py
+Restart=always
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
